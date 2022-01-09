@@ -1,88 +1,112 @@
 .grid-container {
     border: 2px solid black;
     display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 80px 350px 80px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80px 3fr 1fr;
 }
 
 .header {
     border: 2px solid black;
     grid-row: 1 / 2;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
+    background-color: rgb(240, 240, 240);
 }
 
 .main {
     border: 2px solid black;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    background-color: rgb(255, 227, 203);
 }
 
 .grid-container1 {
     border: 2px solid red;
-    margin-top: 100px;
-    grid-template-columns: 50px 50px;
-    grid-template-rows: 100px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px;
+    gap: 10px;
 }
 
 .section1 {
     border: 2px solid black;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    background-color: rgb(250, 203, 127);
 }
 
 .section2 {
     border: 2px solid black;
     grid-row: 1 / 2;
     grid-column: 2 / 4;
+    background-color: rgb(250, 203, 127);
 }
 
 .section3 {
     border: 2px solid black;
     grid-row: 2 / 4;
     grid-column: 1 / 4;
+    background-color: rgb(250, 203, 127);
 }
 
 .aside {
     border: 2px solid black;
     grid-row: 2 / 3;
-    grid-column: 3 / 4;
+    grid-column: 2 / 4;
+    background-color: rgb(132, 190, 132);
 }
 
 .footer {
     border: 2px solid black;
     grid-row: 3 / 4;
     grid-column: 1 / 4;
+    background-color: rgb(240, 240, 240);
 }
 
 .grid-container2 {
-    border: 2px solid green;
-    height: 150px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    border: 2px solid rgb(145, 212, 145);
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 70px;
+    gap: 10px;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .ftrsection1 {
     border: 2px solid black;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    background-color: white;
 }
 
 .ftrsection2 {
     border: 2px solid black;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    background-color: white;
 }
 
 .ftrsection3 {
     border: 2px solid black;
     grid-row: 1 / 2;
     grid-column: 3 / 4;
+    background: white;
 }
 
 .ftrsection4 {
     border: 2px solid black;
     grid-row: 1 / 2;
     grid-column: 4 / 5;
+    background-color: white;
+}
+
+.text,
+.textf {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
 }
