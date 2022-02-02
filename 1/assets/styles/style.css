@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     border: 1px solid black;
     grid-template-columns: 20% 3fr;
     grid-template-rows: 1em 3fr 1em;
@@ -39,54 +39,80 @@
 .section1 {
     grid-area: 1 / 1 / 2 / 2;
     border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .section2 {
     grid-area: 1 / 2 / 2 / 3;
     border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .section3 {
     grid-area: 1 / 3 / 2 / 4;
     border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .section4 {
     grid-area: 2 / 1 / 3 / 2;
     border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .section5 {
     grid-area: 2 / 2 / 3 / 3;
     border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .section6 {
-    grid-area: 2 / 3 / 3 / 4;
+    grid-area: 2 / 3 / 4 / 4;
     border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
 }
 
 .section7 {
     grid-area: 3 / 1 / 4 / span 2;
     border: 2px solid black;
+    background-image: url("assets\images\grafic.png");
+    background-size: 50%;
+    background-position: center;
 }
 
 .section8 {
     grid-area: 3 / 2 / 4 / 3;
     border: 2px solid black;
+
 }
 
 .section9 {
     grid-area: 3 / 3 / 4 / 4;
     border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .section1__image1 {
-    max-width: 70%;
+    max-width: 72%;
 }
 
 .section2__image2 {
-    max-width: 79%;
+    max-width: 82%;
 }
 
 .section3__image3 {
@@ -94,24 +120,22 @@
 }
 
 .section4__image4 {
-    max-width: 80%;
+    max-width: 89%;
 }
 
 .section5__image5 {
-    max-width: 80%;
+    max-width: 95%;
 }
 
 .section6__image6 {
-    max-height: 100%;
+    max-height: 65%;
 }
 
-.section7__image7 {
-    max-height: 100%;
-    max-width: 100%;
-}
+.section7__image7 {}
 
 .section9__image8 {
-    max-width: 100%;
+    max-height: 30%;
+    padding-top: 147px;
 }
 
 .logo-grid {
@@ -130,7 +154,7 @@
 .navigation {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1 fr);
+    grid-template-rows: repeat(6, 10%);
     border: 1px solid black;
     margin-top: 50px;
     justify-items: start;
